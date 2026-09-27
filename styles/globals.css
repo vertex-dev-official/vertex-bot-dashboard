@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --accent: #9b6fbf;
+}
+
+body {
+  background: #0f0b17;
+  color: #f2eefa;
+  font-family: "Inter", system-ui, -apple-system, sans-serif;
+}
+
+.card {
+  background: #171223;
+  border: 1px solid #2a2138;
+  border-radius: 1rem;
+}
+
+.btn-primary {
+  background: var(--accent);
+  color: white;
+  border-radius: 0.75rem;
+  padding: 0.6rem 1.2rem;
+  font-weight: 600;
+  transition: opacity 0.15s ease;
+}
+.btn-primary:hover {
+  opacity: 0.85;
+}
+
+input[type="text"],
+input[type="number"],
+textarea,
+select {
+  background: #0f0b17;
+  border: 1px solid #2a2138;
+  border-radius: 0.5rem;
+  padding: 0.5rem 0.75rem;
+  color: #f2eefa;
+  width: 100%;
+}
