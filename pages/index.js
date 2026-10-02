@@ -1,5 +1,6 @@
 const { useSession, signIn, signOut } = require("next-auth/react");
-const Link = require("next/link").default;
+const nextLinkModule = require("next/link");
+const Link = nextLinkModule.default || nextLinkModule;
 
 function Home() {
   const { data: session, status } = useSession();

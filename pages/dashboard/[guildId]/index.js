@@ -1,6 +1,7 @@
 const { getServerSession } = require("next-auth/next");
 const { useState } = require("react");
-const Link = require("next/link").default;
+const nextLinkModule = require("next/link");
+const Link = nextLinkModule.default || nextLinkModule;
 const { authOptions } = require("../../../lib/authOptions");
 const { fetchManageableGuilds } = require("../../../lib/discord");
 const { prisma } = require("../../../lib/prisma");
